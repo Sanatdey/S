@@ -1,0 +1,4 @@
+var a = 12 , b = 3 , c = 0 . 
+~ c = a / b .
+showme ~ c .
+
