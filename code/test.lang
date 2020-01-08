@@ -1,5 +1,5 @@
 var a = 12 , b = 3 , c = 0 , d = 100 . 
 ~ d = a / b .
-showme ~ d .
+showme ~ "at" .
 
 
