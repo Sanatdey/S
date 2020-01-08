@@ -10,7 +10,7 @@ def main():
 		content = file.read()
 	lex = lexer.Lexer(content)
 	tokens = lex.tokenize()
-	parse = par.Par(tokens)
+	parse = parser.Par(tokens)
 	obj = parse.parse()
 
 
