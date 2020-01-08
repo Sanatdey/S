@@ -1,4 +1,4 @@
-import par
+import parser
 import lexer
 
 
