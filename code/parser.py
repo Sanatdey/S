@@ -11,7 +11,7 @@ class Par(object):
 			if tokens_type == 'VARIABLE' and tokens_value == 'var':
 				self.par_var_dec(self.tokens[self.count:len(self.tokens)])
 				ask = (mymath.assignmentOpp(self.tokens[self.count:len(self.tokens)]))
-			elif tokens_type == 'IDENTIFIRE' and tokens_value == 'showme':
+			elif tokens_type == 'IDENTIFIER' and tokens_value == 'showme':
 				self.showme(self.tokens[self.count:len(self.tokens)],ask)
 			elif tokens_type == 'INOUT' and tokens_value == '~':
 				mymath.math(self.tokens[self.count:len(self.tokens)],ask)
@@ -38,13 +38,13 @@ class Par(object):
 				break
 			
 			elif token in il:
-				if tokens_type == "IDENTIFIRE":
-					identifire = tokens_value
+				if tokens_type == "IDENTIFIER":
+					identifier = tokens_value
 				else :
 					print("Syntax ERROR : you must give a variable name after variable decliaration")		
 					break
 			elif token in ol:#2 or token == 4 or token == 6 or token == 8:
-				if tokens_type == "OPARETOR":
+				if tokens_type == "OPERATOR":
 					tok =1
 					
 				else :
