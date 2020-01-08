@@ -6,10 +6,15 @@ class Par(object):
 	def __init__(self,tokens):
 		self.tokens=tokens
 
+	# Method to parse the entire set of tokens
 	def parse(self):
+		
+		# To store the tokens index
 		self.token_index = 0
 		
 		while self.token_index < len(self.tokens):
+			
+			# Variables to store token type and value
 			tokens_type = self.tokens[self.token_index][0]
 			tokens_value = self.tokens[self.token_index][1]
 			
@@ -23,6 +28,7 @@ class Par(object):
 			
 			self.token_index += 1
 
+	# Method to parse variable declaration statement
 	def par_var_dec(self ,token_ip_stream	):
 		token_chk = 0
 		for token in range(0,len(token_ip_stream)+1):
@@ -77,7 +83,7 @@ class Par(object):
 			
 		
 			
-			
+	# Method to parse Input output function
 	def showme(self,token_ip_stream,toko):
 	
 		if token_ip_stream[1][0] == "INOUT" :

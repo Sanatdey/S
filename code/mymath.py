@@ -1,3 +1,4 @@
+# Defination for mathematical operation
 def math(token_ip_stream,toko):
 	
 		if token_ip_stream[0][0] == 'INOUT' and token_ip_stream[1][0] == 'IDENTIFIRE' and token_ip_stream[2][1] == "=" and  token_ip_stream[3][1] == toko[0][0] and token_ip_stream[5][1] == toko[1][0] and token_ip_stream[6][0] == "STATEMENT_END" :
@@ -31,6 +32,7 @@ def math(token_ip_stream,toko):
 
 		return (toko)
 
+# Defination for assignment operation
 def assignmentOpp(token_ip_stream):
 		toko = []
 		token_chk = 1
