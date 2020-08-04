@@ -12,7 +12,7 @@ def main():
 		# reading and storing the contents of the file
 		content = file.read()
 
-	############################
+    ############################
     #         Lexer           #
     ############################
 
@@ -21,7 +21,7 @@ def main():
 	# Calling the tokenize method from inside the lexer instance
 	tokens = lex.tokenize()
 
-	############################
+    ############################
     #         Parser           #
     ############################
 
