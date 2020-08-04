@@ -53,14 +53,14 @@ class Par(object):
 				if tokens_type == "IDENTIFIER":
 					identifier = tokens_value
 				else :
-					print("Syntax ERROR : You must give a variable name after variable declaration")		
+					print("Syntax error: You must give a variable name after variable declaration!")		
 					break
 			elif token in ol:#2 or token == 4 or token == 6 or token == 8:
 				if tokens_type == "OPERATOR":
 					tok =1
 					
 				else :
-					print("Syntax ERROR : You miss the assignment operator after VARIABLE name")
+					print("Syntax error: Assignment operator after variable name is missing!")
 					break
 			elif token in vl:#== 3 or token == 5 or token == 7 or token == 9:
 				if tokens_type == 'STRING':
@@ -68,7 +68,7 @@ class Par(object):
 				elif tokens_type == 'INTEGER':
 					initalization =1
 				else :
-					print("Syntax ERROR : IT CAN BE A INTEGER, STRING OR IDENTIFIER I.E. variable")
+					print("Syntax error: It can be an integer, string, or identifier (i.e. variable)")
 					break
 			
 			elif token in cl:
@@ -77,7 +77,7 @@ class Par(object):
 				elif tokens_type == "STATEMENT_END":
 					break
 				else :
-					print("Syntax ERROR : In this position you can used comma for multiple declaration or you can used assignment operator for initalization")
+					print("Syntax error: In this position you need to use a comma for multiple declarations or you can use the assignment operator for initalization")
 					break
 			token_chk = token_chk + 1 
 			
@@ -93,7 +93,7 @@ class Par(object):
 				print("Statement End MISSING : you have to give '.' for debug")
 			
 		else:
-			print("Syntax ERROR : You have to type string within parenthesis or you have to give output operator")
+			print("Syntax error: You need to either type the string within parenthesis or give output operator!")
 			
 		token_chk = 1
 		for i in range(0 ,len(toko)):
