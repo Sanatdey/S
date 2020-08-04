@@ -28,7 +28,7 @@ def math(token_ip_stream,toko):
 					toko[-1][0]	= " "
 
 				else :
-					print("Syntax ERROR : you miss the operator or you have wrong syntax [Ex. ~ num1 = a + b .] or Statement MISSING : You miss the Statement end notation '.'")
+					print("Syntax error: the operator is missing, you have incorrect syntax [Ex. ~ num1 = a + b .], or the statement end notation (\".\") is missing.")
 
 		return (toko)
 
